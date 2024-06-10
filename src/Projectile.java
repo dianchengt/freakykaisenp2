@@ -4,7 +4,7 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 
-public class Projectile implements methods {
+public class Projectile {
 
     private double xCoord;
     private double yCoord;
@@ -43,7 +43,27 @@ public class Projectile implements methods {
     public Rectangle rect(){
         int imageHeight = getImage().getHeight();
         int imageWidth = getImage().getWidth();
-        Rectangle rect = new Rectangle((int) xCoord, (int) yCoord, imageWidth, imageHeight);
+        Rectangle rect = new Rectangle((int) xCoord, (int)yCoord, imageWidth, imageHeight);
         return rect;
     }
+
+    public Rectangle rectOne(){
+        int imageHeight = getImage().getHeight();
+        int imageWidth = getImage().getWidth();
+        Rectangle rect = new Rectangle((int) xCoord + GraphicsPanel.getGojoIncrementer(), (int) yCoord, imageWidth - 40, imageHeight);
+        return rect;
+    }
+
+    public Rectangle rectTwo(){
+        int imageHeight = getImage().getHeight();
+        int imageWidth = getImage().getWidth();
+        Rectangle rect = new Rectangle((int) xCoord + GraphicsPanel.getSukunaIncrementer(), (int) yCoord, imageWidth - 45, imageHeight);
+        return rect;
+    }
+
+
+    public void setImage(BufferedImage img){
+        image = img;
+    }
 }
+

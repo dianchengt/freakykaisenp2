@@ -36,11 +36,10 @@ public class WelcomePanel extends JPanel implements ActionListener {
     public void paintComponent(Graphics g){
         super.paintComponent(g);
         g.setFont(new Font("Courier New", Font.BOLD, 24));
-        g.drawString("Welcome to the Battle", 58, 30);
-        g.drawString("of the Strongest", 100, 55);
+        g.drawString("Freaky Kaisen", 110, 50);
         startGameButton.setLocation(50, 100);
         instructionsButton.setLocation(250, 100);
-        g.drawImage(gojo, 50, 150, null);
+        g.drawImage(gojo, 35, 150, null);
         g.drawImage(sukuna, 250, 140, null);
         g.drawImage(vs, 155, 155, null);
     }

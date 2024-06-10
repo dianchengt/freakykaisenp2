@@ -8,86 +8,98 @@ public class Character implements methods{
 
     private int health;
     private int domainBar;
-    private BufferedImage charImage;
+    private BufferedImage charLeft, charRight;
     private double xCoord;
     private double yCoord;
     private boolean facingRight;
-    private final double DISTANCE = 0.5;
-    public Character(double xCoord, double yCoord, String file, boolean facingRight){
+    private final double DISTANCE = 0.4;
+
+
+    public Character(double xCoord, double yCoord, String leftFile, String rightFile, boolean facingRight) {
         this.xCoord = xCoord;
         this.yCoord = yCoord;
         this.facingRight = facingRight;
         health = 10;
         domainBar = 0;
-        try{
-            charImage = ImageIO.read(new File(file));
-        }catch(IOException e){
+        try {
+            charLeft = ImageIO.read(new File(leftFile));
+            charRight = ImageIO.read(new File(rightFile));
+        } catch (IOException e) {
             System.out.println(e.getMessage());
         }
     }
 
-    public BufferedImage getImage(){
-        return charImage;
+
+    public BufferedImage getImage() {
+        if(facingRight){
+            return charRight;
+        }else{
+            return charLeft;
+        }
     }
 
-    public double getXCoord(){
+    public BufferedImage getLeft() {
+        return charLeft;
+    }
+
+    public BufferedImage getRight() {
+        return charRight;
+    }
+
+    public double getXCoord() {
         return xCoord;
     }
 
-    public double getYCoord(){
+    public double getYCoord() {
         return yCoord;
     }
 
-    public int getHealth(){
+    public int getHealth() {
         return health;
     }
 
-    public int getDomainBar(){
+    public int getDomainBar() {
         return domainBar;
     }
 
-    public boolean isFacingRight(){
+    public boolean isFacingRight() {
         return facingRight;
     }
 
-    public void loseHealth(){
-        health --;
+    public void loseHealth() {
+        health--;
     }
 
-    public void chargeDomain(){
-        domainBar ++;
+    public void gainHealth(){
+        health ++;
     }
 
-    public void resetDomainBar(){
+    public void chargeDomain() {
+        domainBar++;
+    }
+
+    public void resetDomainBar() {
         domainBar = 0;
     }
 
-    public void moveLeft(){
-        if(!(xCoord < 0)){
+    public void moveLeft() {
+        if (!(xCoord < 0)) {
             xCoord -= DISTANCE;
         }
     }
 
-    public void moveRight(){
-        if(!(xCoord > 850)){
+    public void moveRight() {
+        if (!(xCoord > 1080)) {
             xCoord += DISTANCE;
         }
     }
 
-    public void moveUp(){
-        if(!(yCoord < 0)){
-            yCoord -= DISTANCE;
-        }
+    public void faceRight() {
+        facingRight = true;
     }
 
-    public void moveDown() {
-        if (!(yCoord > 435)) {
-            yCoord += DISTANCE;
-        }
-    }
-
-    public void changefacingDirection(){
-        facingRight = !facingRight;
+    public void faceLeft() {
+        facingRight = false;
     }
 
     public Rectangle rect() {
@@ -96,5 +108,19 @@ public class Character implements methods{
         Rectangle rect = new Rectangle((int) xCoord, (int) yCoord, imageWidth, imageHeight);
         return rect;
     }
+
+    public boolean hasLanded(){
+        return yCoord >= 300;
+    }
+
+    public void setYCoord(double yCoord){
+        this.yCoord = yCoord;
+    }
+
+    public int getHeight(){
+        return getImage().getHeight();
+    }
+
+
 }
 

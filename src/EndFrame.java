@@ -1,17 +1,18 @@
 import javax.swing.*;
 
-public class MainFrame implements Runnable {
+public class EndFrame implements Runnable {
 
-    private GraphicsPanel panel;
+    private EndPanel panel;
+    private String winner;
 
-    public MainFrame(){
-        JFrame frame = new JFrame("Game");
+    public EndFrame(String winner) {
+        JFrame frame = new JFrame("End Screen");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(1163, 650);
+        frame.setSize(400, 300);
         frame.setLocationRelativeTo(null);
-        panel =  new GraphicsPanel(frame);
+        panel = new EndPanel(frame, winner);
         frame.add(panel);
-        frame.setVisible((true));
+        frame.setVisible(true);
 
         Thread thread = new Thread(this);
         thread.start();

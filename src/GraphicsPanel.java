@@ -47,9 +47,9 @@ public class GraphicsPanel extends JPanel implements KeyListener, ActionListener
     // instance variables for domain activation
     private boolean sukunaDomainActive, gojoDomainActive, bothDomainActive;
     private boolean gojoFirstLoop, sukunaFirstLoop;
-    private Clip gojoClip, sukunaClip, bothClip;
+    private Clip gojoClip, sukunaClip;
     private boolean pause, gojoPause, sukunaPause;
-    private boolean playGojoDomain, playSukunaDomain, playBothDomain;
+    private boolean playGojoDomain, playSukunaDomain;
     private long gojoDomainStartTime, sukunaDomainStartTime;
 
     // instance variables for health regeneration implementation
@@ -60,7 +60,7 @@ public class GraphicsPanel extends JPanel implements KeyListener, ActionListener
     // constructor sets all instance variables to default states
     public GraphicsPanel(JFrame frame) {
         enclosingFrame = frame;
-        playerOne = new Character(10, 380,  "assets/gojoright.png", "assets/gojoleft.png", true);
+        playerOne = new Character(10, 380,  "assets/gojoleft.png", "assets/gojoright.png", true);
         playerTwo = new Character(1063, 380, "assets/sukunaleft.png", "assets/sukunaright.png", false);
         addKeyListener(this);
         pressedKeys = new boolean[128];
@@ -69,7 +69,6 @@ public class GraphicsPanel extends JPanel implements KeyListener, ActionListener
         timer = new Timer(1000, this);
         playGojoDomain = true;
         playSukunaDomain = true;
-        playBothDomain = true;
         try {
             background = ImageIO.read(new File("assets/background.png"));
             backupBackground = ImageIO.read(new File("assets/background.png"));
@@ -83,7 +82,7 @@ public class GraphicsPanel extends JPanel implements KeyListener, ActionListener
             System.out.println(e.getMessage());
         }
 
-        heart = new Projectile(562, 100, "assets/heart.png");
+        heart = new Projectile(559, 100, "assets/heart.png");
 
         gojoFirstLoop = true;
         rightPurpleHollowActive = false;
@@ -233,7 +232,7 @@ public class GraphicsPanel extends JPanel implements KeyListener, ActionListener
             }
             if (isHeartVisible) {
                 if (heart.getImage() != null) {
-                    g.drawImage(heart.getImage(), 567, 100, null);
+                    g.drawImage(heart.getImage(), (int) heart.getXCoord(), (int) heart.getYCoord(), null);
                     if (playerOne.rect().intersects(heart.rect()) && playerOne.getHealth() < 10) {
                         playerOne.gainHealth();
                         heart.setImage(null);
@@ -759,20 +758,6 @@ public class GraphicsPanel extends JPanel implements KeyListener, ActionListener
             }
         }
 
-       /* if(gojoPause && sukunaPause){
-            bothDomainActive = true;
-            gojoPause = false;
-            sukunaPause = false;
-        }
-        if(bothDomainActive){
-            if(playBothDomain){
-                playBothMusic();
-                playBothDomain = false;
-            }
-            background = domainClash;
-        }
-        */
-
         // playerOne domain keys
         if(!sukunaDomainActive && !sukunaPause) {
             if (pressedKeys[81] && playerOne.getDomainBar() == 4) {
@@ -1237,16 +1222,6 @@ public class GraphicsPanel extends JPanel implements KeyListener, ActionListener
             sukunaClip = AudioSystem.getClip();
             sukunaClip.open(audioInputStream);
             sukunaClip.start();
-        }catch(Exception e){
-            System.out.println(e.getMessage());
-        }
-    }
-    private void playBothMusic(){
-        try{
-            AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File("assets/bothdomainmusic.wav").getAbsoluteFile());
-            bothClip = AudioSystem.getClip();
-            bothClip.open(audioInputStream);
-            bothClip.start();
         }catch(Exception e){
             System.out.println(e.getMessage());
         }

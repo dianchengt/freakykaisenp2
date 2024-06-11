@@ -142,6 +142,7 @@ public class GraphicsPanel extends JPanel implements KeyListener, ActionListener
         isHeartVisible = false;
 
         gojoDomainStartTime = 0;
+        sukunaDomainStartTime = 0;
     }
 
     @Override

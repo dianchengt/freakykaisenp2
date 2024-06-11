@@ -29,7 +29,6 @@ public class Character implements methods{
         }
     }
 
-
     public BufferedImage getImage() {
         if(facingRight){
             return charRight;
@@ -113,6 +112,10 @@ public class Character implements methods{
         return yCoord >= 300;
     }
 
+    public void setXCoord(double xCoord){
+        this.xCoord = xCoord;
+    }
+
     public void setYCoord(double yCoord){
         this.yCoord = yCoord;
     }
@@ -121,6 +124,4 @@ public class Character implements methods{
         return getImage().getHeight();
     }
 
-
 }
-

@@ -1130,13 +1130,11 @@ public class GraphicsPanel extends JPanel implements KeyListener, ActionListener
             gojoPause = true;
             gojoDomainStartTime = System.currentTimeMillis();
             playerOne.resetDomainBar();
-            System.out.println("gojo debug");
         } else if (pressedKeys[85] && playerTwo.getDomainBar() == 4 && !pressedKeys[81] && !(playerOne.getDomainBar() == 4) && !gojoDomainActive && !gojoPause) {
             pause = true;
             sukunaPause = true;
             sukunaDomainStartTime = System.currentTimeMillis();
             playerTwo.resetDomainBar();
-            System.out.println("suskuna debug");
         }
 
         // gojo's domain animation!!!

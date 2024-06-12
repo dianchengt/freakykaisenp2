@@ -806,6 +806,324 @@ public class GraphicsPanel extends JPanel implements KeyListener, ActionListener
                     playBothDomain = true;
                     pause = true;
                 }
+            }else if (System.currentTimeMillis() - startTime >= 13000) {
+                try{
+                    background = ImageIO.read(new File("assets/clash51.png"));
+                } catch (IOException e) {
+                    System.out.println(e.getMessage());
+                }
+            } else if (System.currentTimeMillis() - startTime >= 12700) {
+                try{
+                    background = ImageIO.read(new File("assets/clash50.png"));
+                } catch (IOException e) {
+                    System.out.println(e.getMessage());
+                }
+            } else if (System.currentTimeMillis() - startTime >= 12400) {
+                try{
+                    background = ImageIO.read(new File("assets/clash49.png"));
+                } catch (IOException e) {
+                    System.out.println(e.getMessage());
+                }
+            } else if (System.currentTimeMillis() - startTime >= 12100) {
+                try{
+                    background = ImageIO.read(new File("assets/clash48.png"));
+                } catch (IOException e) {
+                    System.out.println(e.getMessage());
+                }
+            } else if (System.currentTimeMillis() - startTime >= 12000) {
+                try{
+                    background = ImageIO.read(new File("assets/clash47.png"));
+                } catch (IOException e) {
+                    System.out.println(e.getMessage());
+                }
+            } else if (System.currentTimeMillis() - startTime >= 11850) {
+                try{
+                    background = ImageIO.read(new File("assets/clash46.png"));
+                } catch (IOException e) {
+                    System.out.println(e.getMessage());
+                }
+            } else if (System.currentTimeMillis() - startTime >= 11250) {
+                try{
+                    background = ImageIO.read(new File("assets/clash45.png"));
+                } catch (IOException e) {
+                    System.out.println(e.getMessage());
+                }
+            } else if (System.currentTimeMillis() - startTime >= 10500) {
+                try{
+                    background = ImageIO.read(new File("assets/clash44.png"));
+                } catch (IOException e) {
+                    System.out.println(e.getMessage());
+                }
+            } else if (System.currentTimeMillis() - startTime >= 9750) {
+                try{
+                    background = ImageIO.read(new File("assets/clash45.png"));
+                } catch (IOException e) {
+                    System.out.println(e.getMessage());
+                }
+            } else if (System.currentTimeMillis() - startTime >= 9000) {
+                try{
+                    background = ImageIO.read(new File("assets/clash44.png"));
+                } catch (IOException e) {
+                    System.out.println(e.getMessage());
+                }
+            } else if (System.currentTimeMillis() - startTime >= 8700) {
+                try{
+                    background = ImageIO.read(new File("assets/clash43.png"));
+                } catch (IOException e) {
+                    System.out.println(e.getMessage());
+                }
+            } else if (System.currentTimeMillis() - startTime >= 8650) {
+                try{
+                    background = ImageIO.read(new File("assets/clash42.png"));
+                } catch (IOException e) {
+                    System.out.println(e.getMessage());
+                }
+            } else if (System.currentTimeMillis() - startTime >= 8600) {
+                try{
+                    background = ImageIO.read(new File("assets/clash41.png"));
+                } catch (IOException e) {
+                    System.out.println(e.getMessage());
+                }
+            } else if (System.currentTimeMillis() - startTime >= 8550) {
+                try{
+                    background = ImageIO.read(new File("assets/clash40.png"));
+                } catch (IOException e) {
+                    System.out.println(e.getMessage());
+                }
+            } else if (System.currentTimeMillis() - startTime >= 8500) {
+                try{
+                    background = ImageIO.read(new File("assets/clash39.png"));
+                } catch (IOException e) {
+                    System.out.println(e.getMessage());
+                }
+            } else if (System.currentTimeMillis() - startTime >= 8450) {
+                try{
+                    background = ImageIO.read(new File("assets/clash38.png"));
+                } catch (IOException e) {
+                    System.out.println(e.getMessage());
+                }
+            } else if (System.currentTimeMillis() - startTime >= 8400) {
+                try{
+                    background = ImageIO.read(new File("assets/clash37.png"));
+                } catch (IOException e) {
+                    System.out.println(e.getMessage());
+                }
+            } else if (System.currentTimeMillis() - startTime >= 8300) {
+                try{
+                    background = ImageIO.read(new File("assets/clash36.png"));
+                } catch (IOException e) {
+                    System.out.println(e.getMessage());
+                }
+            } else if (System.currentTimeMillis() - startTime >= 8250) {
+                try{
+                    background = ImageIO.read(new File("assets/clash35.png"));
+                } catch (IOException e) {
+                    System.out.println(e.getMessage());
+                }
+            } else if (System.currentTimeMillis() - startTime >= 8200) {
+                try{
+                    background = ImageIO.read(new File("assets/clash34.png"));
+                } catch (IOException e) {
+                    System.out.println(e.getMessage());
+                }
+            } else if (System.currentTimeMillis() - startTime >= 8100) {
+                try{
+                    background = ImageIO.read(new File("assets/clash33.png"));
+                } catch (IOException e) {
+                    System.out.println(e.getMessage());
+                }
+            } else if (System.currentTimeMillis() - startTime >= 5700) {
+                try{
+                    background = ImageIO.read(new File("assets/clash32.png"));
+                } catch (IOException e) {
+                    System.out.println(e.getMessage());
+                }
+            } else if (System.currentTimeMillis() - startTime >= 5500) {
+                try{
+                    background = ImageIO.read(new File("assets/clash31.png"));
+                } catch (IOException e) {
+                    System.out.println(e.getMessage());
+                }
+            } else if (System.currentTimeMillis() - startTime >= 5250) {
+                try{
+                    background = ImageIO.read(new File("assets/clash30.png"));
+                } catch (IOException e) {
+                    System.out.println(e.getMessage());
+                }
+            } else if (System.currentTimeMillis() - startTime >= 5050) {
+                try{
+                    background = ImageIO.read(new File("assets/clash29.png"));
+                } catch (IOException e) {
+                    System.out.println(e.getMessage());
+                }
+            } else if (System.currentTimeMillis() - startTime >= 5000) {
+                try{
+                    background = ImageIO.read(new File("assets/clash28.png"));
+                } catch (IOException e) {
+                    System.out.println(e.getMessage());
+                }
+            } else if (System.currentTimeMillis() - startTime >= 4900) {
+                try{
+                    background = ImageIO.read(new File("assets/clash27.png"));
+                } catch (IOException e) {
+                    System.out.println(e.getMessage());
+                }
+            } else if (System.currentTimeMillis() - startTime >= 4750) {
+                try{
+                    background = ImageIO.read(new File("assets/clash26.png"));
+                } catch (IOException e) {
+                    System.out.println(e.getMessage());
+                }
+            } else if (System.currentTimeMillis() - startTime >= 4650) {
+                try{
+                    background = ImageIO.read(new File("assets/clash25.png"));
+                } catch (IOException e) {
+                    System.out.println(e.getMessage());
+                }
+            } else if (System.currentTimeMillis() - startTime >= 4500) {
+                try{
+                    background = ImageIO.read(new File("assets/clash24.png"));
+                } catch (IOException e) {
+                    System.out.println(e.getMessage());
+                }
+            } else if (System.currentTimeMillis() - startTime >= 4350) {
+                try{
+                    background = ImageIO.read(new File("assets/clash23.png"));
+                } catch (IOException e) {
+                    System.out.println(e.getMessage());
+                }
+            } else if (System.currentTimeMillis() - startTime >= 4200) {
+                try{
+                    background = ImageIO.read(new File("assets/clash22.png"));
+                } catch (IOException e) {
+                    System.out.println(e.getMessage());
+                }
+            } else if (System.currentTimeMillis() - startTime >= 4050) {
+                try{
+                    background = ImageIO.read(new File("assets/clash21.png"));
+                } catch (IOException e) {
+                    System.out.println(e.getMessage());
+                }
+            } else if (System.currentTimeMillis() - startTime >= 3950) {
+                try{
+                    background = ImageIO.read(new File("assets/clash20.png"));
+                } catch (IOException e) {
+                    System.out.println(e.getMessage());
+                }
+            } else if (System.currentTimeMillis() - startTime >= 3850) {
+                try{
+                    background = ImageIO.read(new File("assets/clash19.png"));
+                } catch (IOException e) {
+                    System.out.println(e.getMessage());
+                }
+            } else if (System.currentTimeMillis() - startTime >= 3700) {
+                try{
+                    background = ImageIO.read(new File("assets/clash18.png"));
+                } catch (IOException e) {
+                    System.out.println(e.getMessage());
+                }
+            } else if (System.currentTimeMillis() - startTime >= 3550) {
+                try{
+                    background = ImageIO.read(new File("assets/clash17.png"));
+                } catch (IOException e) {
+                    System.out.println(e.getMessage());
+                }
+            } else if (System.currentTimeMillis() - startTime >= 3250) {
+                try{
+                    background = ImageIO.read(new File("assets/clash16.png"));
+                } catch (IOException e) {
+                    System.out.println(e.getMessage());
+                }
+            } else if (System.currentTimeMillis() - startTime >= 2950) {
+                try{
+                    background = ImageIO.read(new File("assets/clash15.png"));
+                } catch (IOException e) {
+                    System.out.println(e.getMessage());
+                }
+            } else if (System.currentTimeMillis() - startTime >= 2750) {
+                try{
+                    background = ImageIO.read(new File("assets/clash14.png"));
+                } catch (IOException e) {
+                    System.out.println(e.getMessage());
+                }
+            } else if (System.currentTimeMillis() - startTime >= 2450) {
+                try{
+                    background = ImageIO.read(new File("assets/clash13.png"));
+                } catch (IOException e) {
+                    System.out.println(e.getMessage());
+                }
+            } else if (System.currentTimeMillis() - startTime >= 2250) {
+                try{
+                    background = ImageIO.read(new File("assets/clash12.png"));
+                } catch (IOException e) {
+                    System.out.println(e.getMessage());
+                }
+            } else if (System.currentTimeMillis() - startTime >= 2050) {
+                try{
+                    background = ImageIO.read(new File("assets/clash11.png"));
+                } catch (IOException e) {
+                    System.out.println(e.getMessage());
+                }
+            } else if (System.currentTimeMillis() - startTime >= 1950) {
+                try{
+                    background = ImageIO.read(new File("assets/clash10.png"));
+                } catch (IOException e) {
+                    System.out.println(e.getMessage());
+                }
+            } else if (System.currentTimeMillis() - startTime >= 1850) {
+                try{
+                    background = ImageIO.read(new File("assets/clash9.png"));
+                } catch (IOException e) {
+                    System.out.println(e.getMessage());
+                }
+            } else if (System.currentTimeMillis() - startTime >= 1725) {
+                try{
+                    background = ImageIO.read(new File("assets/clash8.png"));
+                } catch (IOException e) {
+                    System.out.println(e.getMessage());
+                }
+            } else if (System.currentTimeMillis() - startTime >= 1600) {
+                try{
+                    background = ImageIO.read(new File("assets/clash7.png"));
+                } catch (IOException e) {
+                    System.out.println(e.getMessage());
+                }
+            } else if (System.currentTimeMillis() - startTime >= 1400) {
+                try{
+                    background = ImageIO.read(new File("assets/clash6.png"));
+                } catch (IOException e) {
+                    System.out.println(e.getMessage());
+                }
+            } else if (System.currentTimeMillis() - startTime >= 1200) {
+                try{
+                    background = ImageIO.read(new File("assets/clash5.png"));
+                } catch (IOException e) {
+                    System.out.println(e.getMessage());
+                }
+            } else if (System.currentTimeMillis() - startTime >= 900) {
+                try{
+                    background = ImageIO.read(new File("assets/clash4.png"));
+                } catch (IOException e) {
+                    System.out.println(e.getMessage());
+                }
+            } else if (System.currentTimeMillis() - startTime >= 600) {
+                try{
+                    background = ImageIO.read(new File("assets/clash3.png"));
+                } catch (IOException e) {
+                    System.out.println(e.getMessage());
+                }
+            } else if (System.currentTimeMillis() - startTime >= 400) {
+                try{
+                    background = ImageIO.read(new File("assets/clash2.png"));
+                } catch (IOException e) {
+                    System.out.println(e.getMessage());
+                }
+            } else if (System.currentTimeMillis() - startTime >= 0) {
+                try{
+                    background = ImageIO.read(new File("assets/clash1.png"));
+                } catch (IOException e) {
+                    System.out.println(e.getMessage());
+                }
             }
         } else if (pressedKeys[81] && playerOne.getDomainBar() == 4 && !pressedKeys[85] && !(playerTwo.getDomainBar() == 4) && !sukunaDomainActive && !sukunaPause) {
             pause = true;
